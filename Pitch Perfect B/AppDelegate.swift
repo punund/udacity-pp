@@ -2,11 +2,12 @@
 //  AppDelegate.swift
 //  Pitch Perfect B
 //
-//  Created by Ilja Ketris on 28/7/2015.
+//  Created by Iļja Ketris on 28/7/2015.
 //  Copyright (c) 2015 Ilja Ketris. All rights reserved.
 //
 
 import UIKit
+import Foundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+//        Parse.setApplicationId("QPPjVdjiFjmmwd7Ck9cWjWKmux4S1umii20rQ94C", clientKey: "HLxK3jNh90RmeuC9CSmpFYsKUblGLIllpQEhSUIe")
+//        
+//        var object = PFObject(className: "TestClass")
+//        object.addObject("Banana", forKey: "favoriteFood")
+//        object.addObject("Chocolate", forKey: "favoriteIceCream")
+//        object.saveInBackgroundWithBlock {
+//            (success, error) -> Void in
+//            if success {
+//                NSLog("Object created with id: \(object.objectId)")
+//            } else {
+//                NSLog("%@", error!)
+//            }
+//        }
         return true
     }
 

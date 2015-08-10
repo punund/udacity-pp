@@ -7,12 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		592B86EA1B6ACBB000C17AC9 /* RecordedAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592B86E91B6ACBB000C17AC9 /* RecordedAudio.swift */; };
 		593B62C41B67827400C64CAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593B62C31B67827400C64CAD /* AppDelegate.swift */; };
-		593B62C61B67827400C64CAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593B62C51B67827400C64CAD /* ViewController.swift */; };
+		593B62C61B67827400C64CAD /* RecordSoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593B62C51B67827400C64CAD /* RecordSoundViewController.swift */; };
 		593B62C91B67827400C64CAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 593B62C71B67827400C64CAD /* Main.storyboard */; };
-		593B62CB1B67827400C64CAD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 593B62CA1B67827400C64CAD /* Images.xcassets */; };
 		593B62CE1B67827400C64CAD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 593B62CC1B67827400C64CAD /* LaunchScreen.xib */; };
 		593B62DA1B67827500C64CAD /* Pitch_Perfect_BTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593B62D91B67827500C64CAD /* Pitch_Perfect_BTests.swift */; };
+		593B62E41B68474C00C64CAD /* PlaySoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593B62E31B68474C00C64CAD /* PlaySoundViewController.swift */; };
+		593B62E81B684F3100C64CAD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593B62E71B684F3100C64CAD /* AVFoundation.framework */; };
+		593B62EA1B684F9F00C64CAD /* movie_quote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 593B62E91B684F9F00C64CAD /* movie_quote.mp3 */; };
+		593B62EC1B6993F600C64CAD /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593B62EB1B6993F600C64CAD /* Parse.framework */; };
+		593B62EE1B69940400C64CAD /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593B62ED1B69940400C64CAD /* Bolts.framework */; };
+		593B62F01B69948600C64CAD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593B62EF1B69948600C64CAD /* AudioToolbox.framework */; };
+		593B62F21B6994C400C64CAD /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593B62F11B6994C400C64CAD /* CFNetwork.framework */; };
+		593B62F41B6994CE00C64CAD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593B62F31B6994CE00C64CAD /* CoreGraphics.framework */; };
+		593B62F61B6994D800C64CAD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593B62F51B6994D800C64CAD /* CoreLocation.framework */; };
+		593B62F81B6994E200C64CAD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593B62F71B6994E200C64CAD /* QuartzCore.framework */; };
+		593B62FA1B6994EB00C64CAD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593B62F91B6994EB00C64CAD /* Security.framework */; };
+		593B62FC1B6994FF00C64CAD /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593B62FB1B6994FF00C64CAD /* StoreKit.framework */; };
+		593B62FE1B69950E00C64CAD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593B62FD1B69950E00C64CAD /* SystemConfiguration.framework */; };
+		593B63001B69951D00C64CAD /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 593B62FF1B69951D00C64CAD /* libz.dylib */; };
+		593B63021B69952A00C64CAD /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 593B63011B69952A00C64CAD /* libsqlite3.dylib */; };
+		596B4FBB1B78A5A10078C00F /* Images 11-15-10-363.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 596B4FBA1B78A5A10078C00F /* Images 11-15-10-363.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +42,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		592B86E61B6999DB00C17AC9 /* Pitch Perfect B-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pitch Perfect B-Bridging-Header.h"; sourceTree = "<group>"; };
+		592B86E91B6ACBB000C17AC9 /* RecordedAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordedAudio.swift; sourceTree = "<group>"; };
 		593B62BE1B67827400C64CAD /* Pitch Perfect B.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pitch Perfect B.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		593B62C21B67827400C64CAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		593B62C31B67827400C64CAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		593B62C51B67827400C64CAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		593B62C51B67827400C64CAD /* RecordSoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSoundViewController.swift; sourceTree = "<group>"; };
 		593B62C81B67827400C64CAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		593B62CA1B67827400C64CAD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		593B62CD1B67827400C64CAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		593B62D31B67827500C64CAD /* Pitch Perfect BTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pitch Perfect BTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		593B62D81B67827500C64CAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		593B62D91B67827500C64CAD /* Pitch_Perfect_BTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pitch_Perfect_BTests.swift; sourceTree = "<group>"; };
+		593B62E31B68474C00C64CAD /* PlaySoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundViewController.swift; sourceTree = "<group>"; };
+		593B62E71B684F3100C64CAD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		593B62E91B684F9F00C64CAD /* movie_quote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = movie_quote.mp3; sourceTree = "<group>"; };
+		593B62EB1B6993F600C64CAD /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		593B62ED1B69940400C64CAD /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		593B62EF1B69948600C64CAD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		593B62F11B6994C400C64CAD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		593B62F31B6994CE00C64CAD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		593B62F51B6994D800C64CAD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		593B62F71B6994E200C64CAD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		593B62F91B6994EB00C64CAD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		593B62FB1B6994FF00C64CAD /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		593B62FD1B69950E00C64CAD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		593B62FF1B69951D00C64CAD /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		593B63011B69952A00C64CAD /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		596B4FBA1B78A5A10078C00F /* Images 11-15-10-363.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images 11-15-10-363.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +76,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				593B63021B69952A00C64CAD /* libsqlite3.dylib in Frameworks */,
+				593B63001B69951D00C64CAD /* libz.dylib in Frameworks */,
+				593B62FE1B69950E00C64CAD /* SystemConfiguration.framework in Frameworks */,
+				593B62FC1B6994FF00C64CAD /* StoreKit.framework in Frameworks */,
+				593B62FA1B6994EB00C64CAD /* Security.framework in Frameworks */,
+				593B62F81B6994E200C64CAD /* QuartzCore.framework in Frameworks */,
+				593B62F61B6994D800C64CAD /* CoreLocation.framework in Frameworks */,
+				593B62F41B6994CE00C64CAD /* CoreGraphics.framework in Frameworks */,
+				593B62F21B6994C400C64CAD /* CFNetwork.framework in Frameworks */,
+				593B62F01B69948600C64CAD /* AudioToolbox.framework in Frameworks */,
+				593B62EE1B69940400C64CAD /* Bolts.framework in Frameworks */,
+				593B62EC1B6993F600C64CAD /* Parse.framework in Frameworks */,
+				593B62E81B684F3100C64CAD /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +102,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		592B86E51B69986C00C17AC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				593B63011B69952A00C64CAD /* libsqlite3.dylib */,
+				593B62FF1B69951D00C64CAD /* libz.dylib */,
+				593B62FD1B69950E00C64CAD /* SystemConfiguration.framework */,
+				593B62FB1B6994FF00C64CAD /* StoreKit.framework */,
+				593B62F91B6994EB00C64CAD /* Security.framework */,
+				593B62F71B6994E200C64CAD /* QuartzCore.framework */,
+				593B62F51B6994D800C64CAD /* CoreLocation.framework */,
+				593B62F31B6994CE00C64CAD /* CoreGraphics.framework */,
+				593B62F11B6994C400C64CAD /* CFNetwork.framework */,
+				593B62EF1B69948600C64CAD /* AudioToolbox.framework */,
+				593B62ED1B69940400C64CAD /* Bolts.framework */,
+				593B62EB1B6993F600C64CAD /* Parse.framework */,
+				593B62E71B684F3100C64CAD /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		593B62B51B67827400C64CAD = {
 			isa = PBXGroup;
 			children = (
+				592B86E51B69986C00C17AC9 /* Frameworks */,
 				593B62C01B67827400C64CAD /* Pitch Perfect B */,
 				593B62D61B67827500C64CAD /* Pitch Perfect BTests */,
 				593B62BF1B67827400C64CAD /* Products */,
+				592B86E61B6999DB00C17AC9 /* Pitch Perfect B-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,10 +145,12 @@
 		593B62C01B67827400C64CAD /* Pitch Perfect B */ = {
 			isa = PBXGroup;
 			children = (
+				596B4FBA1B78A5A10078C00F /* Images 11-15-10-363.xcassets */,
 				593B62C31B67827400C64CAD /* AppDelegate.swift */,
-				593B62C51B67827400C64CAD /* ViewController.swift */,
+				593B62C51B67827400C64CAD /* RecordSoundViewController.swift */,
+				592B86E91B6ACBB000C17AC9 /* RecordedAudio.swift */,
 				593B62C71B67827400C64CAD /* Main.storyboard */,
-				593B62CA1B67827400C64CAD /* Images.xcassets */,
+				593B62E31B68474C00C64CAD /* PlaySoundViewController.swift */,
 				593B62CC1B67827400C64CAD /* LaunchScreen.xib */,
 				593B62C11B67827400C64CAD /* Supporting Files */,
 			);
@@ -90,6 +160,7 @@
 		593B62C11B67827400C64CAD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				593B62E91B684F9F00C64CAD /* movie_quote.mp3 */,
 				593B62C21B67827400C64CAD /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -194,7 +265,8 @@
 			files = (
 				593B62C91B67827400C64CAD /* Main.storyboard in Resources */,
 				593B62CE1B67827400C64CAD /* LaunchScreen.xib in Resources */,
-				593B62CB1B67827400C64CAD /* Images.xcassets in Resources */,
+				596B4FBB1B78A5A10078C00F /* Images 11-15-10-363.xcassets in Resources */,
+				593B62EA1B684F9F00C64CAD /* movie_quote.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +284,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				593B62C61B67827400C64CAD /* ViewController.swift in Sources */,
+				592B86EA1B6ACBB000C17AC9 /* RecordedAudio.swift in Sources */,
+				593B62C61B67827400C64CAD /* RecordSoundViewController.swift in Sources */,
+				593B62E41B68474C00C64CAD /* PlaySoundViewController.swift in Sources */,
 				593B62C41B67827400C64CAD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,9 +414,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Pitch Perfect B/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pitch Perfect B-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -350,9 +432,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Pitch Perfect B/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pitch Perfect B-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -409,6 +498,7 @@
 				593B62DF1B67827500C64CAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		593B62E01B67827500C64CAD /* Build configuration list for PBXNativeTarget "Pitch Perfect BTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +507,7 @@
 				593B62E21B67827500C64CAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
