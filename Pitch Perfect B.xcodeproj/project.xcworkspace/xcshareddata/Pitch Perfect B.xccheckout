@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B9C7F37A-91A9-421A-9A15-9D559F6C8CC0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6BFD391CB61F9757882B7DF085F9AE6D98A36E8A</key>
+		<string>github.com:punund/udacity-pp</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Pitch Perfect B.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6BFD391CB61F9757882B7DF085F9AE6D98A36E8A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:punund/udacity-pp</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6BFD391CB61F9757882B7DF085F9AE6D98A36E8A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6BFD391CB61F9757882B7DF085F9AE6D98A36E8A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Pitch%20Perfect%20B</string>
+		</dict>
+	</array>
+</dict>
+</plist>

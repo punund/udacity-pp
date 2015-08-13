@@ -16,6 +16,7 @@ class RecordSoundViewController: UIViewController, AVAudioRecorderDelegate {
     @IBOutlet weak var mikeButton: UIButton!
     @IBOutlet weak var progressNotice: UILabel!
     @IBOutlet weak var stopButton: UIButton!
+    @IBOutlet weak var recordingError: UILabel!
     
     func recordingInProgress(recording: Bool) {
         progressNotice.text = "recording, push to stop"
@@ -27,21 +28,13 @@ class RecordSoundViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     override func viewWillAppear(animated: Bool) {
-        println(recordedAudio.title)
+        super.viewWillAppear(animated)
         recordingInProgress(false)
     }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     @IBAction func recordSound(sender: UIButton) {
         println("Идёт запись")
+        recordingError.hidden = true
         
         let dirPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as! String
         // let's make it unique
@@ -70,6 +63,7 @@ class RecordSoundViewController: UIViewController, AVAudioRecorderDelegate {
             self.performSegueWithIdentifier("stopRecording", sender: recordedAudio)
         } else {
             println("Ошибка при записи")
+            recordingError.hidden = false
         }
         
     }

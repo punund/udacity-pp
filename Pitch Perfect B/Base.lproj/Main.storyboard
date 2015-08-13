@@ -6,7 +6,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Звукозапись-->
+        <!--Record and play-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="RecordSoundViewController" customModule="Pitch_Perfect_B" customModuleProvider="target" sceneMemberID="viewController">
@@ -30,7 +30,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="push to record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNf-Fe-fKN">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D1x-zp-Cyh" userLabel="StopButton">
@@ -42,13 +42,21 @@
                                     <action selector="stopRecording:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Yss-iC-vpD"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="recording error" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUf-UC-LOP">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="D1x-zp-Cyh" secondAttribute="centerY" id="0SJ-Bb-CTV"/>
                             <constraint firstAttribute="centerX" secondItem="D1x-zp-Cyh" secondAttribute="centerX" id="0lw-I6-PAH"/>
+                            <constraint firstAttribute="centerX" secondItem="nUf-UC-LOP" secondAttribute="centerX" id="43x-uH-d1a"/>
                             <constraint firstAttribute="centerX" secondItem="VNf-Fe-fKN" secondAttribute="centerX" id="Rrp-5r-F6T"/>
                             <constraint firstItem="VNf-Fe-fKN" firstAttribute="top" secondItem="MNa-ml-hsK" secondAttribute="bottom" constant="23" id="TW3-5I-q8X"/>
+                            <constraint firstItem="D1x-zp-Cyh" firstAttribute="top" secondItem="nUf-UC-LOP" secondAttribute="bottom" constant="57" id="Tl3-qd-uhW"/>
                             <constraint firstAttribute="centerX" secondItem="MNa-ml-hsK" secondAttribute="centerX" id="cld-vy-3Y5"/>
                             <constraint firstAttribute="centerY" secondItem="MNa-ml-hsK" secondAttribute="centerY" id="uWJ-0F-fhX"/>
                         </constraints>
@@ -57,10 +65,13 @@
                                 <exclude reference="MNa-ml-hsK"/>
                                 <exclude reference="VNf-Fe-fKN"/>
                                 <exclude reference="D1x-zp-Cyh"/>
+                                <exclude reference="nUf-UC-LOP"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="43x-uH-d1a"/>
                                 <exclude reference="0SJ-Bb-CTV"/>
                                 <exclude reference="0lw-I6-PAH"/>
+                                <exclude reference="Tl3-qd-uhW"/>
                                 <exclude reference="cld-vy-3Y5"/>
                                 <exclude reference="uWJ-0F-fhX"/>
                                 <exclude reference="Rrp-5r-F6T"/>
@@ -72,10 +83,13 @@
                                 <include reference="MNa-ml-hsK"/>
                                 <include reference="VNf-Fe-fKN"/>
                                 <include reference="D1x-zp-Cyh"/>
+                                <include reference="nUf-UC-LOP"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="43x-uH-d1a"/>
                                 <include reference="0SJ-Bb-CTV"/>
                                 <include reference="0lw-I6-PAH"/>
+                                <include reference="Tl3-qd-uhW"/>
                                 <include reference="cld-vy-3Y5"/>
                                 <include reference="uWJ-0F-fhX"/>
                                 <include reference="Rrp-5r-F6T"/>
@@ -83,10 +97,11 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Звукозапись" id="3LT-9Y-qWP"/>
+                    <navigationItem key="navigationItem" title="Record and play" id="3LT-9Y-qWP"/>
                     <connections>
                         <outlet property="mikeButton" destination="MNa-ml-hsK" id="b6L-vB-XPk"/>
                         <outlet property="progressNotice" destination="VNf-Fe-fKN" id="qyG-B8-WPF"/>
+                        <outlet property="recordingError" destination="nUf-UC-LOP" id="Hfa-NZ-adc"/>
                         <outlet property="stopButton" destination="D1x-zp-Cyh" id="F6x-9N-btE"/>
                         <segue destination="hM0-ye-Kgy" kind="show" identifier="stopRecording" id="IOj-5l-bz8"/>
                     </connections>
@@ -175,16 +190,16 @@
                                 <exclude reference="yfg-33-IZQ"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="8SY-Pt-kOP"/>
-                                <exclude reference="YIA-cx-cJT"/>
+                                <exclude reference="3al-cw-qCf"/>
                                 <exclude reference="RXI-jJ-u4g"/>
                                 <exclude reference="iNu-Zp-SOz"/>
+                                <exclude reference="CQF-wK-Z1B"/>
                                 <exclude reference="76S-Dn-d6e"/>
                                 <exclude reference="Tw3-PK-YW4"/>
+                                <exclude reference="8SY-Pt-kOP"/>
+                                <exclude reference="YIA-cx-cJT"/>
                                 <exclude reference="Y3f-k7-YvK"/>
                                 <exclude reference="tGa-hH-5PO"/>
-                                <exclude reference="CQF-wK-Z1B"/>
-                                <exclude reference="3al-cw-qCf"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -196,16 +211,16 @@
                                 <include reference="yfg-33-IZQ"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="8SY-Pt-kOP"/>
-                                <include reference="YIA-cx-cJT"/>
+                                <include reference="3al-cw-qCf"/>
                                 <include reference="RXI-jJ-u4g"/>
                                 <include reference="iNu-Zp-SOz"/>
+                                <include reference="CQF-wK-Z1B"/>
                                 <include reference="76S-Dn-d6e"/>
                                 <include reference="Tw3-PK-YW4"/>
+                                <include reference="8SY-Pt-kOP"/>
+                                <include reference="YIA-cx-cJT"/>
                                 <include reference="Y3f-k7-YvK"/>
                                 <include reference="tGa-hH-5PO"/>
-                                <include reference="CQF-wK-Z1B"/>
-                                <include reference="3al-cw-qCf"/>
                             </mask>
                         </variation>
                     </view>

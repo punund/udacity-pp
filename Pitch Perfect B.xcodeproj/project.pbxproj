@@ -15,7 +15,6 @@
 		593B62DA1B67827500C64CAD /* Pitch_Perfect_BTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593B62D91B67827500C64CAD /* Pitch_Perfect_BTests.swift */; };
 		593B62E41B68474C00C64CAD /* PlaySoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593B62E31B68474C00C64CAD /* PlaySoundViewController.swift */; };
 		593B62E81B684F3100C64CAD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593B62E71B684F3100C64CAD /* AVFoundation.framework */; };
-		593B62EA1B684F9F00C64CAD /* movie_quote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 593B62E91B684F9F00C64CAD /* movie_quote.mp3 */; };
 		593B62EC1B6993F600C64CAD /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593B62EB1B6993F600C64CAD /* Parse.framework */; };
 		593B62EE1B69940400C64CAD /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593B62ED1B69940400C64CAD /* Bolts.framework */; };
 		593B62F01B69948600C64CAD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593B62EF1B69948600C64CAD /* AudioToolbox.framework */; };
@@ -55,7 +54,6 @@
 		593B62D91B67827500C64CAD /* Pitch_Perfect_BTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pitch_Perfect_BTests.swift; sourceTree = "<group>"; };
 		593B62E31B68474C00C64CAD /* PlaySoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundViewController.swift; sourceTree = "<group>"; };
 		593B62E71B684F3100C64CAD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		593B62E91B684F9F00C64CAD /* movie_quote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = movie_quote.mp3; sourceTree = "<group>"; };
 		593B62EB1B6993F600C64CAD /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		593B62ED1B69940400C64CAD /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		593B62EF1B69948600C64CAD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -160,7 +158,6 @@
 		593B62C11B67827400C64CAD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				593B62E91B684F9F00C64CAD /* movie_quote.mp3 */,
 				593B62C21B67827400C64CAD /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -266,7 +263,6 @@
 				593B62C91B67827400C64CAD /* Main.storyboard in Resources */,
 				593B62CE1B67827400C64CAD /* LaunchScreen.xib in Resources */,
 				596B4FBB1B78A5A10078C00F /* Images 11-15-10-363.xcassets in Resources */,
-				593B62EA1B684F9F00C64CAD /* movie_quote.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

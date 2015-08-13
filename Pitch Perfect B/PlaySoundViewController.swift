@@ -19,25 +19,19 @@ class PlaySoundViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        // новый код
         audioEngine = AVAudioEngine()
         audioFile = AVAudioFile(forReading: receivedAudio.filePathUrl, error: nil)
-
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    func commonAudioFunction(audioChangeNumber: Float, typeOfChange: String){
-        
+    func initializePlayer() {
         audioPlayerNode = AVAudioPlayerNode()
         audioPlayerNode.stop()
         audioEngine.stop()
         audioEngine.reset()
-        
+    }
+
+    func commonAudioFunction(audioChangeNumber: Float, typeOfChange: String) {
+        initializePlayer()
         audioEngine.attachNode(audioPlayerNode)
         
         var changeAudioUnitTime = AVAudioUnitTimePitch()
@@ -58,39 +52,22 @@ class PlaySoundViewController: UIViewController {
         audioEngine.startAndReturnError(nil)
         
         audioPlayerNode.play()
-        
     }
     
     @IBAction func hareSpeed(sender: UIButton) {
-        println("*** заяц ***")
         commonAudioFunction(1.6, typeOfChange: "rate")
     }
     @IBAction func snailSpeed(sender: UIButton) {
-        println("*** улитка ***")
         commonAudioFunction(0.6, typeOfChange: "rate")
     }
     @IBAction func chipmunkEffect(sender: UIButton) {
-        println("*** бурундук ***")
         commonAudioFunction(1100, typeOfChange: "pitch")
     }
     @IBAction func darthVaderEffect(sender: UIButton) {
-        println("*** Дарт Вейдер ***")
         commonAudioFunction(-750, typeOfChange: "pitch")
     }
-
     @IBAction func stopPlayBack(sender: UIButton) {
-        audioPlayerNode.stop()
-        audioEngine.stop()
-        audioEngine.reset()
+        initializePlayer()
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
